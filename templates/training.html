@@ -1,0 +1,16 @@
+{% extends "55.html"%}
+
+{% block content %}
+    {% if 'инженер' in prof %}
+        <h2>Инженерные тренажеры</h2>
+<img src="/static/img1/kompyuter.jpg" alt="здесь должна была быть картинка, но не нашлась">
+{% elif 'строитель' in prof %}
+<h2>Научные симуляторы</h2>
+<img src="/static/img1/dsc_4023_-1.jpg" alt="здесь должна была быть картинка, но не нашлась">
+{% else %}
+<h2>Неизвестная профессия</h2>
+{% endif %}
+{% endblock %}
+
+
+
